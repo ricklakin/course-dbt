@@ -1,7 +1,7 @@
 # Solutions: Week One
 
 ### Question 1
-How many users do we have?
+How many users do we have? <br>
 Answer: 130
 
 ```sql
@@ -10,7 +10,7 @@ from dbt_rick_l.stg_greenery__users;
 ```
 
 ### Question 2
-On average, how many orders do we receive per hour?
+On average, how many orders do we receive per hour? <br>
 Answer: 7.52
 
 ```sql
@@ -25,7 +25,7 @@ from date_hour_sums;
 ```
 
 ### Question 3
-On average, how long does an order take from being placed to being delivered?
+On average, how long does an order take from being placed to being delivered? <br>
 Answer: 3.89 days
 
 ```sql
@@ -50,7 +50,7 @@ from calculated_time_to_delivery;
 ```
 
 ### Question 4
-How many users have only made one purchase? Two purchases? Three+ purchases?
+How many users have only made one purchase? Two purchases? Three+ purchases? <br>
 Answer: 1 Purchase - 25, 2 Purchases - 28, 3+ Purchases - 71
 
 ```sql
@@ -72,7 +72,7 @@ order by 1;
 ```
 
 ### Question 5
-On average, how many unique sessions do we have per hour?
+On average, how many unique sessions do we have per hour? <br>
 Answer: 16.33
 
 ```sql
