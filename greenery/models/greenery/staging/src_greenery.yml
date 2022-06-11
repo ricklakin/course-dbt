@@ -1,0 +1,35 @@
+version: 2
+
+sources:
+
+  - name: greenery
+    schema: public
+    database: dbt
+
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+
+    freshness:
+      warn_after: {count: 24, period: hour}
+      error_after: {count: 48, period: hour}
+
+    tables: 
+      - name: users
+        loaded_at_field: created_at
+        description: Information for each unique user on platform.
+      - name: addresses
+        description: Information for each unique address on platform.
+      - name: events
+        loaded_at_field: created_at
+        description: Information for each unique event on the platform.
+      - name: orders
+        loaded_at_field: created_at
+        description: Information for each unique order on platform.
+      - name: order_items
+        description: Quantity and product associated with each order.
+      - name: products
+        description: Information for each unique product on platform.
+      - name: promos
+        description: Information for each promotion.

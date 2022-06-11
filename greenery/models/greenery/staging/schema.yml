@@ -1,0 +1,60 @@
+
+version: 2
+
+models:
+  - name: stg_greenery__users
+    description: Information for each unique user on platform.
+    columns:
+      - name: user_id
+        description: UUID for each unique user on platform.
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_greenery__addresses
+    description: Information for each unique address on platform.
+    columns:
+      - name: address_id
+        description: UUID for each unique address on platform.
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_greenery__events
+    description: Information for each unique event on the platform.
+    columns:
+      - name: event_id
+        description: UUID of each unique event on the platform.
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_greenery__orders
+    description: Information for each unique order on the platform.
+    columns:
+      - name: order_id
+        description: UUID of each unique order on the platform.
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_greenery__products
+    description: Information for each unique product on the platform.
+    columns:
+      - name: product_id
+        description: UUID of each unique product on the platform.
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_greenery__promos
+    description: Information for each promotion.
+    columns:
+      - name: promo_id
+        description: Each unique promocode on platform.
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_greenery__order_items
+    description: Quantity and product associated with each order.
