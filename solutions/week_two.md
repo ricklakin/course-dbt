@@ -30,14 +30,37 @@ What are good indicators of a user who will likely purchase again? <br>
 
 Some indicators could include: <br>
 - Users who have visited the platform multiple times.
+- Users who view multiple products on the platform.
 - Users who have never returned any of their purchases.
 - Users who didn't have to wait too long for their purchases to arrive.
 
 
 What about indicators of users who are likely NOT to purchase again? <br> 
+- Users who visited the platform only once and never returned.
+- Users who returned any of their purchases.
+- Users who had to wait a long time for their purchases to arrive.
 
 
 If you had more data, what features would you want to look into to answer this question? <br>
+- Product reviews: if a customer is pleased with their purchase, perhaps they'd become a repeat purchaser
+- Marketing lead information: are there differences between organic leads and those that learned about Greenery from another source?
+
+### Question 3
+Explain the marts models you added. Why did you organize the models in the way you did? <br>
+
+<b> Core </b>
+- `dim_users`: Information from users joined with specific address information
+
+<b> Marketing </b>
+
+
+<b> Product </b>
+
+
+### Question 4
+Use the dbt docs to visualize your model DAGs to ensure the model layers make sense. <br>
+
+
 
 
 ## Part 2 - Tests
