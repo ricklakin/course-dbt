@@ -52,16 +52,17 @@ Explain the marts models you added. Why did you organize the models in the way y
 - `dim_users`: Information from users joined with specific address information
 
 <b> Marketing </b>
-
+- TBD
 
 <b> Product </b>
-
-
-### Question 4
-Use the dbt docs to visualize your model DAGs to ensure the model layers make sense. <br>
-
-
+- TBD
 
 
 ## Part 2 - Tests
 ### Question 1
+What assumptions are you making about each model? (i.e. why are you adding each test?) <br>
+- I wanted to test if `phone_number` and `email` where not null. If Greenery wanted to reach out to a customer for a specific reason, hopefully one of these pieces of information would be there in `dim_users`.
+
+### Question 2
+Did you find any “bad” data as you added and ran tests on your models? How did you go about either cleaning the data in the dbt model or adjusting your assumptions/tests? <br>
+- No bad data was found as a result of this test.

@@ -4,3 +4,13 @@ version: 2
 models:
   - name: dim_users
     description: Information about users.
+    columns:
+      - name: phone_number
+        tests:
+          - not_null
+      - name: email
+        tests:
+          - not_null
+  
+
+    
